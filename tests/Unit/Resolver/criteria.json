@@ -1,0 +1,53 @@
+{
+	"fields": [
+		{
+			"key": "id",
+			"width": 120,
+			"align": "right"
+		},
+		{
+			"key": "title",
+			"width": null,
+			"align": null
+		}
+	],
+	"conditions": [
+		{
+			"property": "id",
+			"operator": "=",
+			"value": 1
+		},
+		{
+			"property": "title",
+			"operator": "~",
+			"value": "foo"
+		},
+		{
+			"property": "complexVariable",
+			"operator": "=",
+			"value": {
+				"name": "antenna",
+				"keys": [
+					"inStock"
+				],
+				"value": true
+			}
+		},
+		{
+			"property": "simpleVariable",
+			"operator": "=",
+			"value": null
+		}
+	],
+	"sort": [
+		{
+			"property": "id",
+			"ascending": true
+		},
+		{
+			"property": "title",
+			"ascending": false
+		}
+	],
+	"meta": []
+}

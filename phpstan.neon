@@ -1,0 +1,12 @@
+parameters:
+	ignoreErrors:
+		# Should extend BaseControl and decorate SelectBox instead
+		- message: '#^Return type .+ of method .+\:\:getValue\(\) should be compatible with return type \(int\|string\) of method Nette\\Forms\\Controls\\ChoiceControl\:\:getValue\(\)$#'
+		  path: %currentWorkingDirectory%/src/Input/ConditionSelectBox.php
+
+		- message: '#^Only booleans are allowed in a ternary operator condition, int\|string given\.$#'
+		  path: %currentWorkingDirectory%/src/Input/ConditionSelectBox.php
+
+		# Intentional
+		- message: '#^Construct empty\(\) is not allowed\. Use more strict comparison\.$#'
+		  path: %currentWorkingDirectory%/src/Resolver/JsonResolver.php
